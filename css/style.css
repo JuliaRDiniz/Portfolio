@@ -389,6 +389,7 @@ body .cursor {
 }
 body .about-me {
   padding: 0;
+  margin-bottom: 26rem;
 }
 body .about-me .container-about {
   display: flex;
