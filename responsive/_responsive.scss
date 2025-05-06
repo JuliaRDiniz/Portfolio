@@ -168,13 +168,16 @@
 }
 
 @media (max-width: 860px) {
+  section {
+    min-height: auto;
+  }
   body {
     & .about-me {
       align-items: center;
       display: flex;
       height: auto;
       .container-about {
-        padding: 8rem 2rem;
+        padding: 7rem 2rem;
         flex-flow: column;
         gap: 2rem;
       }
@@ -182,6 +185,7 @@
 
     & .projetos {
       & .container-projeto {
+        gap: 4rem !important;
         & .div-projetos {
           width: 61rem !important;
           height: 58rem !important;

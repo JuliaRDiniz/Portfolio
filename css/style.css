@@ -41,6 +41,17 @@
             clip-path: polygon(40% 20%, 60% 10%, 50% 100%, 50% 100%);
   }
 }
+@keyframes illumination-text {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
 @media (max-width: 520px) {
   html {
     font-size: 48% !important;
@@ -167,15 +178,21 @@
   }
 }
 @media (max-width: 860px) {
+  section {
+    min-height: auto;
+  }
   body .about-me {
     align-items: center;
     display: flex;
     height: auto;
   }
   body .about-me .container-about {
-    padding: 8rem 2rem;
+    padding: 7rem 2rem;
     flex-flow: column;
     gap: 2rem;
+  }
+  body .projetos .container-projeto {
+    gap: 4rem !important;
   }
   body .projetos .container-projeto .div-projetos {
     width: 61rem !important;
@@ -295,7 +312,7 @@ html {
 }
 
 section {
-  height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,7 +406,6 @@ body .cursor {
 }
 body .about-me {
   padding: 0;
-  margin-bottom: 26rem;
 }
 body .about-me .container-about {
   display: flex;
@@ -474,11 +490,9 @@ body .about-me .cx-about-me p {
 }
 body .projetos {
   padding: 0;
-  height: 128vh;
-  padding: 0;
-  margin-bottom: 26rem;
 }
 body .projetos .container-projeto {
+  padding: 8rem 1rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -499,11 +513,7 @@ body .projetos .container-projeto .subtitulo-projetos {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: background-position 1.3s ease-in-out;
-}
-body .projetos .container-projeto .subtitulo-projetos:hover {
-  cursor: pointer;
-  background-position: 200%;
+  animation: illumination-text 5s ease-in 4 2s;
 }
 body .projetos .container-projeto .div-projetos {
   background-color: rgba(38, 38, 38, 0.3215686275);

@@ -24,7 +24,7 @@ html {
 }
 
 section {
-  height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,7 +126,6 @@ body {
 
   .about-me {
     padding: 0;
-    margin-bottom: 26rem;
 
     & .container-about {
       display: flex;
@@ -238,11 +237,9 @@ body {
 
   .projetos {
     padding: 0;
-    height: 128vh;
-    padding: 0;
-    margin-bottom: 26rem;
 
     & .container-projeto {
+      padding: 8rem 1rem;
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -268,12 +265,7 @@ body {
         background-position: center;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: background-position 1.3s ease-in-out;
-
-        &:hover {
-          cursor: pointer;
-          background-position: 200%;
-        }
+        animation: illumination-text 5s ease-in 4 2s;
       }
 
       & .div-projetos {
