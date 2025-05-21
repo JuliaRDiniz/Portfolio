@@ -52,6 +52,14 @@
     background-position: 0% center;
   }
 }
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
 @media (max-width: 520px) {
   html {
     font-size: 48% !important;
@@ -403,6 +411,16 @@ body .titulo {
 body .cursor {
   color: var(--color-pink);
   font-weight: bold;
+}
+body .scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  color: var(--color-green);
 }
 body .about-me {
   padding: 0;
