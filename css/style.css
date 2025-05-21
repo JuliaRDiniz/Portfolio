@@ -154,6 +154,9 @@
   body main #home .titulo {
     font-size: 2.6rem;
   }
+  body main #home .scroll-down span {
+    font-size: 2.6rem;
+  }
   body main .projetos .container-projeto .subtitulo-projetos {
     font-size: 7.5rem !important;
     letter-spacing: 0.1rem;
