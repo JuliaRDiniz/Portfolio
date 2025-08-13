@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(() => {
     firstSquare.classList.toggle("pink-border");
     lastSquare.classList.toggle("green-border");
-  }, 1000);
+  }, 2000);
 
   const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -52,25 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   arrowRigth.addEventListener("click", () => {
     if (!pagOne.classList.contains("pag-escondida")) {
-      // Oculta pagOne e exibe pagTwo
       pagOne.classList.add("pag-escondida");
       pagTwo.classList.remove("pag-escondida");
     } else if (!pagTwo.classList.contains("pag-escondida")) {
-      // Oculta pagTwo e exibe pagThree
       pagTwo.classList.add("pag-escondida");
       pagThree.classList.remove("pag-escondida");
     } else if (!pagThree.classList.contains("pag-escondida")) {
-      // Oculta pagTwo e exibe pagThree
       pagThree.classList.add("pag-escondida");
       pagFour.classList.remove("pag-escondida");
       arrowRigth.classList.add("seta-direita-show");
     }
 
     arrowLeft.classList.add("seta-esquerda-ativa");
-
-    // setTimeout(() => {
-    //   pagOne.style.display = "none"; // Some completamente após a animação
-    // }, 1000); // Tempo igual ao da animação
   });
 
   arrowLeft.addEventListener("click", () => {
@@ -94,25 +87,4 @@ document.addEventListener("DOMContentLoaded", function () {
   menuBtn.addEventListener("click", function () {
     navMenu.classList.toggle("show");
   });
-
-  // const arrowRight = document.querySelector(".seta-direita");
-  // const arrowLeft = document.querySelector(".seta-esquerda");
-  // const carousel = document.querySelector(".carousel");
-
-  // let currentIndex = 0;
-
-  // arrowRight.addEventListener("click", () => {
-  //   currentIndex = 1; // Ir para a segunda página
-  //   carousel.style.transform = "translateX(-100%)";
-  //   pagOne.classList.add("desintegrar");
-
-  //   setTimeout(() => {
-  //     pagOne.style.display = "none"; // Some completamente após a animação
-  //   }, 1000); // Tempo igual ao da animação
-  // });
-
-  // arrowLeft.addEventListener("click", () => {
-  //   currentIndex = 0; // Voltar para a primeira página
-  //   carousel.style.transform = "translateX(0)";
-  // });
 });

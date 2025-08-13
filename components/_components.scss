@@ -13,31 +13,6 @@
   border: 1px solid var(--color-pink) !important;
 }
 
-@keyframes sand-disappear {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  30% {
-    opacity: 0.9;
-    clip-path: polygon(5% 0%, 95% 0%, 90% 100%, 10% 100%);
-  }
-  60% {
-    opacity: 0.5;
-    transform: translateY(10px);
-    filter: blur(3px);
-    clip-path: polygon(10% 10%, 90% 5%, 80% 95%, 20% 90%);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(30px);
-    filter: blur(8px);
-    clip-path: polygon(40% 20%, 60% 10%, 50% 100%, 50% 100%);
-  }
-}
-
 @keyframes illumination-text {
   0% {
     background-position: 0% center;
@@ -56,6 +31,69 @@
     transform: translate(-50%, 0);
   }
   50% {
-    transform: translate(-50%, 10px);
+    transform: translate(-50%, 20px);
+  }
+}
+@keyframes gradiente {
+  0%,
+  100% {
+    box-shadow: inset 1px 3px 8px 5px plum;
+  }
+  50% {
+    box-shadow: inset 1px 2px 8px 5px plum;
+  }
+}
+
+@keyframes shadowPulse {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(92, 224, 123, 0.7),
+      0 0 10px rgba(89, 240, 124, 0.5), 0 0 25px rgba(68, 231, 106, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(82, 215, 114, 1),
+      0 0 22px rgba(82, 215, 114, 0.8), 0 0 35px rgba(82, 215, 114, 0.6);
+  }
+}
+
+@keyframes gradiente {
+  0% {
+    background-position: 0% 30%;
+  }
+  25% {
+    background-position: 50% 75%;
+    box-shadow: inset 1px 2px 8px 4px var(--color-pink);
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow: inset 1px 2px 8px 2px rgb(48, 47, 48);
+  }
+  75% {
+    background-position: 50% 25%;
+    box-shadow: inset 1px 2px 8px 5px var(--color-green);
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradiente-inverso {
+  0% {
+    background-position: 0% 30%;
+  }
+  25% {
+    background-position: 50% 75%;
+    box-shadow: inset 1px 2px 8px 4px rgb(182, 221, 160);
+  }
+  40% {
+    background-position: 100% 50%;
+    box-shadow: inset 1px 2px 8px 2px rgb(170, 212, 146);
+  }
+  55% {
+    background-position: 50% 25%;
+    box-shadow: inset 1px 2px 8px 3px rgb(34, 34, 34);
+  }
+  100% {
+    background-position: 0% 30%;
   }
 }
