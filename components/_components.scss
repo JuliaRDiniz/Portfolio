@@ -54,6 +54,10 @@
     text-shadow: 0 0 12px rgba(82, 215, 114, 1),
       0 0 22px rgba(82, 215, 114, 0.8), 0 0 35px rgba(82, 215, 114, 0.6);
   }
+  25% {
+    text-shadow: 0 0 12px rgba(82, 215, 114, 1),
+      0 0 22px rgba(82, 215, 114, 0.8), 0 0 35px rgba(82, 215, 114, 0.6);
+  }
 }
 
 @keyframes gradiente {
@@ -82,15 +86,12 @@
     background-position: 0% 30%;
   }
   25% {
-    background-position: 50% 75%;
     box-shadow: inset 1px 2px 8px 4px rgb(182, 221, 160);
   }
   40% {
-    background-position: 100% 50%;
     box-shadow: inset 1px 2px 8px 2px rgb(170, 212, 146);
   }
   55% {
-    background-position: 50% 25%;
     box-shadow: inset 1px 2px 8px 3px rgb(34, 34, 34);
   }
   100% {

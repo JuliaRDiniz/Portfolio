@@ -192,13 +192,6 @@ body {
         }
 
         &.seven {
-          background: linear-gradient(
-            218deg,
-            #010101d6,
-            #000000cc,
-            #94909075,
-            #9f9f9fbf
-          );
           background-size: 705% 500%;
           animation: gradiente-inverso 13s ease-in-out infinite;
         }
