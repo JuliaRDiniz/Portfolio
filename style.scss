@@ -51,7 +51,7 @@ section {
 .show {
   opacity: 1;
   filter: blur(0px);
-  transition: all 2s;
+  transition: all 2.5s;
   transform: translateX(0);
 }
 
@@ -129,9 +129,8 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 2rem;
-    animation: bounce 2s infinite;
-    cursor: pointer;
+    font-size: 2.5rem;
+    animation: bounce 2s ease-in-out infinite, shadowPulse 4s ease infinite;
     color: var(--color-green);
   }
 
@@ -166,7 +165,7 @@ body {
         }
 
         &.two {
-          background-color: #070707;
+          background-color: #0f0f0f;
         }
 
         &.three {
@@ -178,8 +177,7 @@ body {
             #010101d6
           );
           background-size: 705% 500%;
-          animation: gradiente 11s ease infinite;
-          animation-delay: 1s;
+          animation: gradiente 15s ease-in-out infinite 3s;
         }
         &.four {
           background-color: #070707;
@@ -194,15 +192,8 @@ body {
         }
 
         &.seven {
-          background: linear-gradient(
-            218deg,
-            #010101d6,
-            #000000cc,
-            #94909075,
-            #9f9f9fbf
-          );
           background-size: 705% 500%;
-          animation: gradiente-inverso 13s ease infinite;
+          animation: gradiente-inverso 13s ease-in-out infinite;
         }
 
         &.eigth {
@@ -222,6 +213,16 @@ body {
         transform: translate(-50%, -50%);
         width: 171px;
         object-fit: cover;
+
+        &.hidden {
+          transition: all 1s;
+          filter: blur(8px);
+        }
+
+        &.show {
+          transition: all 4s;
+          filter: blur(0px);
+        }
       }
     }
 
@@ -233,6 +234,7 @@ body {
       gap: 0.5rem;
       padding: 2rem;
       width: 49rem;
+      box-shadow: 0px 0px 9px 1px rgba(71, 70, 71, 0.705);
 
       & h2 {
         font-weight: 600;
@@ -276,11 +278,11 @@ body {
         background-position: center;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: illumination-text 5s ease-in 4 2s;
+        animation: illumination-text 5s ease-in infinite 2s;
       }
 
       & .div-projetos {
-        background-color: #26262652;
+        background-color: #30303052;
         width: 86rem;
         height: 44rem;
         border-radius: 0.8rem;
@@ -330,6 +332,18 @@ body {
           gap: 6rem;
           position: relative;
           align-items: center;
+
+          &.hidden {
+            transition: all 1s;
+            filter: blur(0px);
+            transform: translate(1%, 0.3%);
+          }
+
+          &.show {
+            transition: ease-in-out 1.1s;
+            filter: blur(0px);
+            transform: translate(0);
+          }
 
           & .img-projeto {
             display: flex;
@@ -587,47 +601,5 @@ body {
       text-align: center;
       font-size: 1.2rem;
     }
-  }
-}
-
-@keyframes gradiente {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradiente {
-  0% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 50% 75%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 25%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradiente-inverso {
-  0% {
-    background-position: 100% 50%;
-  }
-  50% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
   }
 }
