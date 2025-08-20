@@ -493,7 +493,6 @@ body .about-me .cx-square .square.two {
 body .about-me .cx-square .square.three {
   background: linear-gradient(53deg, rgba(159, 159, 159, 0.7490196078), rgba(148, 144, 144, 0.4588235294), rgba(0, 0, 0, 0.8), rgba(1, 1, 1, 0.8392156863));
   background-size: 705% 500%;
-  animation: gradiente 15s ease-in-out infinite 3s;
 }
 body .about-me .cx-square .square.four {
   background-color: #070707;
@@ -506,7 +505,6 @@ body .about-me .cx-square .square.six {
 }
 body .about-me .cx-square .square.seven {
   background-size: 705% 500%;
-  animation: gradiente-inverso 13s ease-in-out infinite;
 }
 body .about-me .cx-square .square.eigth {
   background-color: transparent;
