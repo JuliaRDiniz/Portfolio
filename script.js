@@ -20,14 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     showCursor: false,
   });
 
-  const firstSquare = document.querySelector(".square.one");
-  const lastSquare = document.querySelector(".square.nine");
-
-  setInterval(() => {
-    firstSquare.classList.toggle("pink-border");
-    lastSquare.classList.toggle("green-border");
-  }, 2000);
-
   const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
