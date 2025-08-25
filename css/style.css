@@ -32,14 +32,6 @@
     transform: translate(-50%, 20px);
   }
 }
-@keyframes gradiente {
-  0%, 100% {
-    box-shadow: inset 1px 3px 8px 5px plum;
-  }
-  50% {
-    box-shadow: inset 1px 2px 8px 5px plum;
-  }
-}
 @keyframes shadowPulse {
   0%, 100% {
     text-shadow: 0 0 5px rgba(92, 224, 123, 0.7), 0 0 10px rgba(89, 240, 124, 0.5), 0 0 25px rgba(68, 231, 106, 0.3);
@@ -61,7 +53,7 @@
   }
   50% {
     background-position: 100% 50%;
-    box-shadow: inset 1px 2px 8px 2px rgb(48, 47, 48);
+    box-shadow: inset 1px 2px 8px 2px rgb(31, 30, 31);
   }
   75% {
     background-position: 50% 25%;
@@ -76,13 +68,13 @@
     background-position: 0% 30%;
   }
   25% {
-    box-shadow: inset 1px 2px 8px 4px rgb(182, 221, 160);
+    box-shadow: inset 1px 2px 8px 4px var(--color-green);
   }
   40% {
     box-shadow: inset 1px 2px 8px 2px rgb(170, 212, 146);
   }
   55% {
-    box-shadow: inset 1px 2px 8px 3px rgb(34, 34, 34);
+    box-shadow: inset 1px 2px 8px 3px rgb(19, 19, 19);
   }
   100% {
     background-position: 0% 30%;
@@ -484,33 +476,33 @@ body .about-me .cx-square .square {
   height: 12rem;
 }
 body .about-me .cx-square .square.one {
-  border: 1px solid var(--color-pink);
-  background-color: transparent;
+  animation: gradiente 13s ease-in-out 10;
+  background-color: #0e0d0d;
 }
 body .about-me .cx-square .square.two {
-  background-color: #0f0f0f;
+  background-color: #1a1919;
 }
 body .about-me .cx-square .square.three {
-  background: linear-gradient(53deg, rgba(159, 159, 159, 0.7490196078), rgba(148, 144, 144, 0.4588235294), rgba(0, 0, 0, 0.8), rgba(1, 1, 1, 0.8392156863));
+  background: linear-gradient(53deg, rgba(141, 141, 141, 0.7490196078), rgba(128, 124, 124, 0.4588235294), rgba(0, 0, 0, 0.8), rgba(1, 1, 1, 0.8392156863));
   background-size: 705% 500%;
 }
 body .about-me .cx-square .square.four {
-  background-color: #070707;
+  background-color: rgba(19, 19, 19, 0.8352941176);
 }
 body .about-me .cx-square .square.five {
   background-color: transparent;
 }
 body .about-me .cx-square .square.six {
-  background-color: transparent;
+  background-color: rgba(15, 15, 15, 0.7607843137);
 }
 body .about-me .cx-square .square.seven {
-  background-size: 705% 500%;
+  background-color: rgba(15, 15, 15, 0.7607843137);
 }
-body .about-me .cx-square .square.eigth {
+body .about-me .cx-square .square.eight {
   background-color: transparent;
 }
 body .about-me .cx-square .square.nine {
-  border: 1px solid var(--color-green);
+  animation: gradiente-inverso 13s ease-in-out infinite;
   background-color: transparent;
 }
 body .about-me .cx-square .img {

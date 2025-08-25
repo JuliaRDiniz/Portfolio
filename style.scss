@@ -159,27 +159,31 @@ body {
         width: 12rem;
         height: 12rem;
 
+        // transform: translateY(14px) scale(0.96);
+        // // animação genérica aplicada (cada item terá seu delay)
+        // animation: square-enter 560ms cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+
         &.one {
-          border: 1px solid var(--color-pink);
-          background-color: transparent;
+          animation: gradiente 13s ease-in-out 10;
+          background-color: #0e0d0d;
         }
 
         &.two {
-          background-color: #0f0f0f;
+          background-color: #1a1919;
         }
 
         &.three {
           background: linear-gradient(
             53deg,
-            #9f9f9fbf,
-            #94909075,
+            #8d8d8dbf,
+            #807c7c75,
             #000000cc,
             #010101d6
           );
           background-size: 705% 500%;
         }
         &.four {
-          background-color: #070707;
+          background-color: #131313d5;
         }
 
         &.five {
@@ -187,19 +191,19 @@ body {
         }
 
         &.six {
-          background-color: transparent;
+          background-color: #0f0f0fc2;
         }
 
         &.seven {
-          background-size: 705% 500%;
+          background-color: #0f0f0fc2;
         }
 
-        &.eigth {
+        &.eight {
           background-color: transparent;
         }
 
         &.nine {
-          border: 1px solid var(--color-green);
+          animation: gradiente-inverso 13s ease-in-out infinite;
           background-color: transparent;
         }
       }
