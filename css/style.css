@@ -80,6 +80,20 @@
     background-position: 0% 30%;
   }
 }
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-10px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 @media (max-width: 520px) {
   html {
     font-size: 48% !important;
@@ -535,10 +549,19 @@ body .about-me .cx-about-me {
 body .about-me .cx-about-me h2 {
   font-weight: 600;
   padding-bottom: 1.8rem;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
+  background: linear-gradient(91deg, #dfb7c2, #c8d3cb, #f1c3cf, #a1dfb0, #96dda7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  animation: fadeUp 2s ease-out forwards;
+  animation-delay: 3.5s;
 }
 body .about-me .cx-about-me p {
   font-size: 1.4rem;
+  animation-delay: 1s;
 }
 body .projetos {
   padding: 0;
@@ -615,13 +638,13 @@ body .projetos .container-projeto .div-projetos .info-projetos {
 }
 body .projetos .container-projeto .div-projetos .info-projetos.hidden {
   transition: all 1s;
-  filter: blur(0px);
+  filter: blur(1px);
   transform: translate(1%, 0.3%);
 }
 body .projetos .container-projeto .div-projetos .info-projetos.show {
-  transition: ease-in-out 1.1s;
+  transition: ease-in-out 1s;
   filter: blur(0px);
-  transform: translate(0);
+  transform: translateY(0);
 }
 body .projetos .container-projeto .div-projetos .info-projetos .img-projeto {
   display: flex;
@@ -661,8 +684,8 @@ body .projetos .container-projeto .div-projetos .info-projetos .img-projeto .div
 body .projetos .container-projeto .div-projetos .info-projetos .img-projeto .div-button .gitHub :active,
 body .projetos .container-projeto .div-projetos .info-projetos .img-projeto .div-button .visitar:hover,
 body .projetos .container-projeto .div-projetos .info-projetos .img-projeto .div-button .visitar :active {
-  background-image: linear-gradient(180deg, #f27a9b, #52d772);
-  color: var(--black-color);
+  background-color: #444444;
+  color: white;
 }
 body .projetos .container-projeto .div-projetos .info-projetos .descricao-projeto {
   display: flex;

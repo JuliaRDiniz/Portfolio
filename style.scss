@@ -159,10 +159,6 @@ body {
         width: 12rem;
         height: 12rem;
 
-        // transform: translateY(14px) scale(0.96);
-        // // animação genérica aplicada (cada item terá seu delay)
-        // animation: square-enter 560ms cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
-
         &.one {
           animation: gradiente 13s ease-in-out 10;
           background-color: #0e0d0d;
@@ -241,11 +237,27 @@ body {
       & h2 {
         font-weight: 600;
         padding-bottom: 1.8rem;
-        font-size: 1.8rem;
+        font-size: 2.6rem;
+        background: linear-gradient(
+          91deg,
+          #dfb7c2,
+          #c8d3cb,
+          #f1c3cf,
+          #a1dfb0,
+          #96dda7
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+        animation: fadeUp 2s ease-out forwards;
+        animation-delay: 3.5s;
       }
 
       & p {
         font-size: 1.4rem;
+        animation-delay: 1s;
       }
     }
   }
@@ -337,14 +349,14 @@ body {
 
           &.hidden {
             transition: all 1s;
-            filter: blur(0px);
+            filter: blur(1px);
             transform: translate(1%, 0.3%);
           }
 
           &.show {
-            transition: ease-in-out 1.1s;
+            transition: ease-in-out 1s;
             filter: blur(0px);
-            transform: translate(0);
+            transform: translateY(0);
           }
 
           & .img-projeto {
@@ -384,8 +396,8 @@ body {
 
                 &:hover,
                 :active {
-                  background-image: linear-gradient(180deg, #f27a9b, #52d772);
-                  color: var(--black-color);
+                  background-color: #444444;
+                  color: white;
                 }
               }
             }
