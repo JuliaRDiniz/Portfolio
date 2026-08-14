@@ -17,27 +17,22 @@
         }
         & .about-me {
           & .container-about {
-            .cx-square {
+            .cx-photo {
               position: relative;
-              min-height: 300px;
+              min-height: 250px;
               -webkit-display: grid;
               display: grid;
-              grid-template-columns: repeat(3, 1fr);
               grid-template-rows: auto;
-              width: 80%;
+              width: 50%;
               height: auto;
               margin: 0 auto;
               justify-items: center;
               align-items: flex-end;
 
-              & .img {
-                position: absolute;
-                top: 65%;
-                left: 50%;
-                width: 120px;
-                height: auto;
-                z-index: 1;
+              & .img{
+                width: 200px;
               }
+
             }
 
             .cx-about-me {
@@ -140,6 +135,31 @@
         }
       }
 
+       & .skills {
+          padding: 4rem 2.5rem;
+
+          & .container-skills {
+            gap: 2rem;
+          }
+
+          & .cx-skills {
+            width: 100%;
+            padding: 1.8rem;
+
+            & h2 {
+              font-size: 2rem;
+            }
+
+            & .bloco-skills {
+              & p {
+                font-size: 1.5rem;
+                line-height: 1.6;
+                padding: 0.9rem 1rem;
+              }
+            }
+          }
+        }
+
       & .projetos {
         & .container-projeto {
           & .subtitulo-projetos {
@@ -197,6 +217,30 @@
         gap: 2rem;
       }
     }
+
+    & .skills {
+      padding: 5rem 2rem;
+
+      & .container-skills {
+        gap: 2.5rem;
+      }
+
+      & .cx-skills {
+        width: 100%;
+        max-width: 60rem;
+        padding: 2rem;
+
+        & h2 {
+          font-size: 2.2rem;
+          text-align: center;
+        }
+
+        & .bloco-skills {
+          & p {
+            font-size: 1.4rem;
+          }
+        }
+      }}
 
     & .projetos {
       & .container-projeto {

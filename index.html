@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="imagens/logo.png" />
 
     <title>Portfólio Julia Diniz</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/Portfolio/css/style.css" />
 
     <link
       rel="stylesheet"
@@ -25,6 +25,7 @@
         <ul class="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about-me">Sobre Mim</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -43,38 +44,54 @@
       </section>
       <section class="about-me hidden" id="about-me">
         <div class="container-about">
-          <div class="cx-square hidden">
-            <div class="square one"></div>
-            <div class="square two"></div>
-            <div class="square three"></div>
-            <div class="square four"></div>
-            <div class="square five"></div>
-            <div class="square six"></div>
-            <div class="square seven"></div>
-            <div class="square eight"></div>
-            <div class="square nine"></div>
+         <div class="cx-photo hidden">
+            <div class="frame">
 
-            <img src="imagens/foto.png" alt="" class="img hidden" />
+            <span class="corner top-left"></span>
+            <span class="corner top-right"></span>
+            <span class="corner bottom-left"></span>
+            <span class="corner bottom-right"></span>
+
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+
+            <img src="imagens/Foto-.png" alt="Julia Diniz" class="img hidden">
+
+            <span class="role">QA • DEV</span>
+
+            </div>
           </div>
           <div class="cx-about-me hidden">
             <h2 class="titulo-sobreMim">Sobre Mim</h2>
-            <p>
-              Meu nome é Julia, tenho 24 anos e sou formada em Análise e
-              Desenvolvimento de Sistemas. Minha jornada profissional começou
-              como atendente, atuei por seis anos na área farmacêutica. Durante
-              esse período, além do conhecimento técnico, desenvolvi habilidades
-              essenciais como solucionar problemas, comunicação eficaz,
-              organização, agilidade e trabalho em equipe.
-            </p>
-            <p>
-              Meu interesse pela tecnologia e minha curiosidade me levaram ao
-              desenvolvimento front-end, área na qual busco me especializar cada
-              vez mais. Atualmente, tenho experiência com HTML, CSS, SCSS, SASS
-              JavaScript, e React Native, e estou sempre em busca de novos
-              desafios e aprendizados para aprimorar minhas habilidades.
-            </p>
+             <p>
+   Sou graduada em Análise e Desenvolvimento de Sistemas e atuo na área de tecnologia. Antes da minha transição para TI, trabalhei por seis anos no setor farmacêutico, experiência que contribuiu para desenvolver habilidades como organização, comunicação, resolução de problemas e trabalho em equipe.
+  </p>
+
+  <p>
+   Possuo conhecimentos em desenvolvimento de software, com experiência prática em projetos envolvendo Front-end, Back-end, bancos de dados e integração com APIs. Esse background técnico me permite compreender melhor o funcionamento dos sistemas e contribui diretamente para uma visão mais completa durante os testes.
+  </p>
+
+  <p>
+   Atualmente, meu foco principal é Quality Assurance, com atuação na criação de casos de teste, validação de APIs e automação de testes utilizando Cypress. Também participo dos processos de entrega, incluindo a elaboração de release notes, e venho explorando a automação de workflows com n8n.
+  </p>
           </div>
         </div>
+      </section>
+
+
+      <section class="skills hidden" id="skills">
+         <div class="container-skills">
+          <div class="cx-skills hidden">
+           <h2 class="titulo-skills">Hard Skills</h2>
+      
+      <div class="bloco-skills">
+        <p><strong>Quality Assurance:</strong> Automação de testes com Cypress, elaboração de casos de teste (Gherkin), testes funcionais, validação de APIs com Postman/Insomnia, testes exploratórios, execução de testes de regressão e elaboração de release notes para deploy.</p>
+        <p><strong>Desenvolvimento:</strong> Conhecimentos em Angular, JavaScript, HTML, CSS, React Native, desenvolvimento de APIs REST com Node.js (Express), Prisma e Supabase, além da implementação de operações CRUD.</p>
+        <p><strong>Ferramentas & Processos:</strong> Automação de workflows com n8n, versionamento com Git/GitHub e metodologias ágeis (Scrum/Kanban)</p>
+      </div>
+    </div>
+  </div>
       </section>
 
       <section class="projetos hidden" id="projetos">
@@ -183,15 +200,17 @@
                     <div class="circle two"></div>
                     <div class="circle three"></div>
                     <div class="circle four"></div>
+                    <div class="circle five"></div>
+                  
                   </div>
                 </div>
 
-                <div class="info-projetos hidden pag-two pag-escondida">
+                   <div class="info-projetos hidden pag-two pag-escondida">
                   <div class="img-projeto div-img-pag-two">
-                    <img src="imagens/PizzariaHash.png" alt="" />
+                    <img src="imagens/Sistema de Gestão de Pacientes e Exames.png" alt="" />
                     <div class="div-button">
                       <a
-                        href="https://github.com/JuliaRDiniz/PizzaHash"
+                        href="https://github.com/JuliaRDiniz/gestao-pacientes-exames-frontend"
                         target="_blank"
                         class="gitHub"
                       >
@@ -239,7 +258,7 @@
                         </svg>
                       </a>
                       <a
-                        href="https://juliardiniz.github.io/PizzaHash/"
+                        href="https://gestao-pacientes-exames-frontend.vercel.app/pacientes"
                         target="_blank"
                         class="visitar"
                         >Visitar</a
@@ -248,15 +267,117 @@
                   </div>
                   <div class="descricao-projeto div-info-pag-two">
                     <div class="div-info">
-                      <h3 class="titulo-projeto">Pizzaria Hash</h3>
+                      <h3 class="titulo-projeto">Sistema de Gestão de Pacientes e Exames</h3>
                       <p class="texto-info-projeto">
-                        Site interativo para uma pizzaria, criado para testar e
-                        aprimorar meus conhecimentos em HTML, CSS, SCSS (Sass) e
-                        JavaScript. O projeto inclui um carrinho de compras
-                        dinâmico onde os clientes podem visualizar o menu,
-                        adicionar e remover itens do carrinho e simular um
-                        pedido, interface responsiva e interação intuitiva para
-                        os usuários.
+                        Sistema web para gerenciamento de pacientes e exames médicos, desenvolvido com Angular 17, TypeScript, Node.js, Express, Prisma e Supabase (PostgreSQL). A aplicação permite cadastrar, editar, listar e excluir pacientes, além de cadastrar, visualizar e excluir exames vinculados, aplicando regras de negócio, integração com API REST, paginação, validações e interface responsiva.
+                      </p>
+                    </div>
+                    <div class="logo-linguagens">
+                      <img
+                        src="imagens/icons8-angularjs-50.png"
+                        alt="logo-javascript"
+                        width="24px"
+                      />
+                      <img
+                        src="imagens/icons8-nodejs-48.png"
+                        alt="logo-javascript"
+                        width="24px"
+                      />
+                      <img
+                        src="imagens/icons8-expresso-js-50.png"
+                        alt="logo-html"
+                        width="24px"
+                      />
+                      <img
+                        src="imagens/icons8-prisma-orma-50.png"
+                        alt="logo-html"
+                        width="24px"
+                      />
+                      <img
+                        src="imagens/icons8-supabase-48.png"
+                        alt="logo-css"
+                        width="24px"
+                      />
+                     
+                    
+
+                    </div>
+                  </div>
+                  <div class="veja-mais">
+                    <div class="circle one"></div>
+                    <div class="circle two"></div>
+                    <div class="circle three"></div>
+                    <div class="circle four"></div>
+                    <div class="circle five"></div>
+                    
+                  </div>
+                </div>
+
+                <div class="info-projetos hidden pag-three pag-escondida">
+                  <div class="img-projeto div-img-pag-three">
+                    <img src="imagens/Gerenciador-de-Filmes.png" alt="" />
+                    <div class="div-button">
+                      <a
+                        href="https://github.com/JuliaRDiniz/Gerenciador-de-filmes"
+                        target="_blank"
+                        class="gitHub"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 25 25"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12.4962 1.5C9.8848 1.50135 7.35899 2.42628 5.37046 4.10937C3.38192 5.79247 2.06033 8.124 1.64199 10.687C1.22365 13.2501 1.73584 15.8775 3.08699 18.0996C4.43814 20.3216 6.54013 21.9933 9.0171 22.8157C9.56356 22.9172 9.7694 22.5785 9.7694 22.2905C9.7694 22.0025 9.75846 21.1676 9.75482 20.2547C6.69464 20.9158 6.048 18.9634 6.048 18.9634C5.5489 17.6955 4.82757 17.3623 4.82757 17.3623C3.82936 16.6849 4.90226 16.6976 4.90226 16.6976C6.00793 16.7755 6.589 17.8259 6.589 17.8259C7.56899 19.4977 9.16282 19.0141 9.78943 18.7315C9.88779 18.0234 10.1738 17.5416 10.4889 17.2681C8.0444 16.9928 5.47603 16.0546 5.47603 11.8635C5.46088 10.7766 5.86653 9.72549 6.60903 8.92763C6.4961 8.65233 6.11903 7.54027 6.7165 6.02975C6.7165 6.02975 7.64003 5.73634 9.74208 7.15087C11.5451 6.66061 13.4474 6.66061 15.2504 7.15087C17.3506 5.73634 18.2723 6.02975 18.2723 6.02975C18.8716 7.53665 18.4946 8.64871 18.3816 8.92763C19.1265 9.72562 19.533 10.7786 19.5164 11.8672C19.5164 16.0673 16.9426 16.9928 14.4945 17.2627C14.8879 17.6032 15.2395 18.2679 15.2395 19.2894C15.2395 20.7528 15.2267 21.9301 15.2267 22.2905C15.2267 22.5821 15.4253 22.9226 15.9827 22.8157C18.4599 21.9932 20.5621 20.3212 21.9132 18.0988C23.2644 15.8764 23.7763 13.2485 23.3575 10.6853C22.9387 8.12198 21.6164 5.79043 19.6272 4.10762C17.638 2.42481 15.1116 1.5005 12.4999 1.5H12.4962Z"
+                            fill="#313B49"
+                          />
+                          <path
+                            d="M8.85471 19.3527C8.85471 19.4415 8.75271 19.5176 8.62156 19.5194C8.4904 19.5212 8.38293 19.4487 8.38293 19.36C8.38293 19.2712 8.48495 19.1952 8.6161 19.1934C8.74725 19.1916 8.85471 19.2622 8.85471 19.3527Z"
+                            fill="#313B49"
+                          />
+                          <path
+                            d="M9.69264 19.2133C9.70903 19.302 9.61795 19.3944 9.4868 19.4161C9.35565 19.4379 9.2409 19.3853 9.2245 19.2984C9.20811 19.2115 9.30283 19.1173 9.43034 19.0938C9.55784 19.0702 9.67624 19.1245 9.69264 19.2133Z"
+                            fill="#313B49"
+                          />
+                          <path
+                            d="M7.95493 19.2911C7.92761 19.3762 7.80374 19.4142 7.67988 19.378C7.55601 19.3418 7.47405 19.2404 7.49772 19.1534C7.5214 19.0665 7.64709 19.0266 7.77278 19.0665C7.89846 19.1063 7.97861 19.2023 7.95493 19.2911Z"
+                            fill="#313B49"
+                          />
+                          <path
+                            d="M7.12975 18.9362C7.06964 19.0032 6.9476 18.9851 6.84742 18.8945C6.74723 18.804 6.72355 18.6808 6.78366 18.6156C6.84377 18.5504 6.96581 18.5685 7.06964 18.6573C7.17347 18.746 7.19351 18.871 7.12975 18.9362Z"
+                            fill="#313B49"
+                          />
+                          <path
+                            d="M6.5414 18.3276C6.47401 18.3747 6.35924 18.3276 6.29549 18.2335C6.27786 18.2166 6.26384 18.1963 6.25427 18.1739C6.24469 18.1515 6.23975 18.1274 6.23975 18.103C6.23975 18.0787 6.24469 18.0546 6.25427 18.0322C6.26384 18.0098 6.27786 17.9896 6.29549 17.9727C6.36289 17.9275 6.47765 17.9726 6.5414 18.065C6.60516 18.1574 6.60698 18.2805 6.5414 18.3276Z"
+                            fill="#313B49"
+                          />
+                          <path
+                            d="M6.1079 17.6992C6.07018 17.7181 6.02702 17.7233 5.98582 17.7141C5.94461 17.7048 5.90793 17.6816 5.88203 17.6484C5.81099 17.5724 5.79641 17.4673 5.85106 17.4202C5.9057 17.3731 6.00408 17.3949 6.07512 17.4709C6.14616 17.547 6.16255 17.6521 6.1079 17.6992Z"
+                            fill="#313B49"
+                          />
+                          <path
+                            d="M5.66154 17.2047C5.63786 17.259 5.55043 17.2753 5.47939 17.2373C5.40835 17.1993 5.35552 17.1286 5.38103 17.0725C5.40653 17.0163 5.49214 17.0019 5.56318 17.0399C5.63422 17.0779 5.68886 17.1504 5.66154 17.2047Z"
+                            fill="#313B49"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://juliardiniz.github.io/Gerenciador-de-filmes/"
+                        target="_blank"
+                        class="visitar"
+                        >Visitar</a
+                      >
+                    </div>
+                  </div>
+                  <div class="descricao-projeto div-info-pag-three">
+                    <div class="div-info">
+                      <h3 class="titulo-projeto">Gerenciador de Filmes</h3>
+                      <p class="texto-info-projeto">
+                        Site interativo para pesquisa e organização de filmes, desenvolvido com HTML, CSS e JavaScript. Integrado à API do The Movie Database (TMDb), o projeto permite pesquisar filmes por nome, adicionar e remover títulos de uma lista personalizada e visualizar informações detalhadas, como sinopse e nota de avaliação. Possui interface responsiva e navegação intuitiva.
                       </p>
                     </div>
                     <div class="logo-linguagens">
@@ -276,6 +397,8 @@
                         width="24px"
                       />
                       <img src="imagens/sass logo.png" alt="logo scss" />
+                      <img src="imagens/icons8-tmdb-24.png" alt="logo scss" />
+
                     </div>
                   </div>
                   <div class="veja-mais">
@@ -283,11 +406,13 @@
                     <div class="circle two"></div>
                     <div class="circle three"></div>
                     <div class="circle four"></div>
+                    <div class="circle five"></div>
+                    
                   </div>
                 </div>
 
-                <div class="info-projetos hidden pag-three pag-escondida">
-                  <div class="img-projeto div-img-pag-three">
+                <div class="info-projetos hidden pag-four pag-escondida">
+                  <div class="img-projeto div-img-pag-four">
                     <img src="imagens/planejefacil.png" alt="" />
                     <div class="div-button">
                       <a
@@ -346,7 +471,7 @@
                       >
                     </div>
                   </div>
-                  <div class="descricao-projeto div-info-pag-three">
+                  <div class="descricao-projeto div-info-pag-four">
                     <div class="div-info">
                       <h3 class="titulo-projeto">Organizador Semanal</h3>
                       <p class="texto-info-projeto">
@@ -383,11 +508,12 @@
                     <div class="circle two"></div>
                     <div class="circle three"></div>
                     <div class="circle four"></div>
+                    <div class="circle five"></div>
                   </div>
                 </div>
 
-                <div class="info-projetos hidden pag-four pag-escondida">
-                  <div class="img-projeto div-img-pag-four">
+                <div class="info-projetos hidden pag-five pag-escondida">
+                  <div class="img-projeto div-img-pag-five">
                     <img src="imagens/sitePortfolio.png" alt="" />
                     <div class="div-button">
                       <a
@@ -446,7 +572,7 @@
                       >
                     </div>
                   </div>
-                  <div class="descricao-projeto div-info-pag-four">
+                  <div class="descricao-projeto div-info-pag-five">
                     <div class="div-info">
                       <h3 class="titulo-projeto">Portfólio</h3>
                       <p class="texto-info-projeto">
@@ -481,6 +607,7 @@
                     <div class="circle two"></div>
                     <div class="circle three"></div>
                     <div class="circle four"></div>
+                    <div class="circle five"></div>
                   </div>
                 </div>
               </div>
@@ -534,13 +661,13 @@
                 width="20px"
               />
             </div>
-            <a href="imagens/Julia_Diniz_Currículo.pdf" target="_blank"
+            <a href="imagens/Curriculo_Julia_Diniz_QA.pdf" target="_blank"
               >Currículo</a
             >
           </div>
         </div>
         <span
-          >Copyright © 2025 Julia Diniz – Todos os direitos reservados.</span
+          >Copyright © 2026 Julia Diniz – Todos os direitos reservados.</span
         >
       </div>
     </footer>
