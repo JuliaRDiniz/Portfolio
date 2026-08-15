@@ -1,4 +1,5 @@
 @import "responsive/responsive";
+@import "components/components";
 
 :root {
   --black-color: rgb(0, 0, 0);
@@ -417,15 +418,12 @@ mask:
         font-size: 1.45rem;
         line-height: 1.7;
         color: #d7dee7;
-
         padding: 1rem 1.2rem;
         border-radius: 0.8rem;
-
         background: rgba(255, 255, 255, 0.03);
-
         transition: all 0.2s ease;
 
-        /* hover leve no texto (dá sensação de interatividade) */
+
         &:hover {
           background: rgba(255, 114, 208, 0.05);
           transform: translateX(4px);
